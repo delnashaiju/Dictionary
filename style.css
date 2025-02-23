@@ -1,0 +1,105 @@
+/* General Body Styling */
+body {
+    background-color: cadetblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;  /* Centers the mainpage */
+    align-items: center;      /* Centers vertically */
+    height: 100vh;            /* Full viewport height */
+    margin: 0;
+}
+
+/* Main Container */
+.mainpage {
+    text-align: center;
+    font-size: 23px;
+    background: white; /* Adds contrast */
+    padding: 30px;
+    border-radius: 12px; /* Smooth rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    width: 40%; /* Adjust for better scaling */
+    min-width: 350px; /* Ensures it looks good on small screens */
+}
+
+/* Heading */
+.mainpage h1 {
+    color: rgb(27, 27, 48);
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+.mainpage input {
+    width: 70%; /* More space for typing */
+    height: 50px;
+    font-size: 18px;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+.mainpage button {
+    width: 25%; /* More balanced */
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 10px; /* Space between input & button */
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: rgb(26, 21, 58);
+    color: rgb(251, 249, 249);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.mainpage button:hover {
+    background-color: #374785;
+    border-color: #28374a;
+    transform: scale(1.05);
+}
+
+/* Button Click Effect */
+.mainpage button:active {
+    transform: scale(0.98);
+}
+
+/* Definition Container */
+.definition-container {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Definition Box */
+#definition {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    font-size: 18px;
+    text-align: left;
+    margin-top:10px;
+    display: block; /* Initially hidden, can be shown with JS */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .mainpage {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .mainpage input {
+        width: 100%;
+        margin-bottom: 10px; /* Stack input & button */
+    }
+
+    .mainpage button {
+        width: 100%;
+    }
+}
